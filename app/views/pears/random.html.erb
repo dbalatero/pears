@@ -1,3 +1,9 @@
-<h1>I'm a pear!</h1>
+<% if @pear %>
+  <h1>I'm a pear!</h1>
 
-<img src="<%= @pear.url %>" />
+  <img src="<%= @pear.url %>" />
+<% else %>
+  <h1>Add a pear!</h1>
+
+  <a href="<%= new_pear_path %>">CLICK HERE TODAY!</a>
+<% end %>
