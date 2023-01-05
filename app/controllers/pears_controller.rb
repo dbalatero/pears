@@ -12,7 +12,7 @@ class PearsController < ApplicationController
   ]
 
   def random
-    @pear = PEARS.sample
+    @pear = Pear.all.sample
   end
 
   # GET /pears or /pears.json

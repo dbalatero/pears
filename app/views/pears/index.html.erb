@@ -4,7 +4,8 @@
 
 <div id="pears">
   <% @pears.each do |pear| %>
-    <%= render pear %>
+    <img width="300" src="<%= pear.url %>" />
+
     <p>
       <%= link_to "Show this pear", pear %>
     </p>
